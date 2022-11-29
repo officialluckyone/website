@@ -211,7 +211,7 @@ ul li a{
         flex-direction: column-reverse;
         align-items: flex-start;
         justify-content:flex-end;
-        height: 150vh;
+        height: 130vh;
     }
     .about-me{
         width: 80vw;
