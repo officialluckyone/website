@@ -218,12 +218,12 @@ ul li a{
         margin: auto;
         margin-bottom: -150px;
     }
-    /* #profilepict{
-        height: 100vh;
+    #profilepict{
+        height: 70vh;
     }
     #profilepict img{
-        height: 100vh;
-    } */
+        height: 70vh;
+    }
     .pertama h4{
         font-size: 6vw;
         font-weight: 400;
