@@ -6,6 +6,7 @@ body{
     width:100vw;
     background-color: #222831;
     font-family: 'Quicksand', sans-serif;
+    overflow-x:hidden;
 }
 /* Navbar */
 nav{
@@ -23,7 +24,14 @@ nav ul{
     vertical-align: center;
     width: 60%;
     justify-content: space-between;
+    transition: all 1s;
 }
+/* Sliding ON */
+nav ul.slide{
+    transform: translateX(0);
+    opacity:0.8;
+}
+
 #logo-utama{
     height:50px;
 }
@@ -36,6 +44,7 @@ ul li a{
 /* Hamburger Menu */
 .toggle-menu{
     display: none;
+    z-index: 99;
     height: 21px;
     position: relative;
     flex-direction: column;
@@ -100,6 +109,17 @@ ul li a{
         margin-left: 40%;
     }
     nav ul{
-        display: none;
+        position: absolute;
+        right: 0;
+        top:0;
+        flex-direction: column;
+        background-color: #222831;
+        z-index: 98;
+        height: 100vh;
+        width: 70vw;
+        align-items: center;
+        justify-content: space-evenly;
+        opacity: 0;
+        transform: translatex(100%);
     }
 }
