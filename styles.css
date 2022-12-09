@@ -474,10 +474,20 @@ div.tag img{
         opacity: 0;
         transform: translatex(100%);
     }
-    .contact-me{
-        width: 120px;
-        height: 40px;
-        font-size: 14px;
+    .about-me h4{
+        font-size: 7vw;
+    }
+    .about-me h2{
+        font-size: 15vw;
+        line-height: 1.5em;
+    }
+    .about-me p{
+        font-size: 4vw;
+        line-height: 1.5em;
+        text-align: center;
+    }
+    .button{
+        font-size: 16px;
     }
     div.jobcard{
         width: 360px;
@@ -492,7 +502,48 @@ div.tag img{
         font-size: 20px;
         color: #222831;
     }
-
+    .slider{
+        width: 70vw;
+        height: 70vw;
+    }
+    
+    .slides{
+        width: 420vw;
+        height: 70vw;
+        display: flex;
+    }
+    
+    .slide img{
+        width: 70vw;
+        height: 70vw;
+    }
+    .slide{
+        width: 70vw;
+    }
+    .navigation-manual{
+        width: 70vw;
+        padding-top: 65vw;
+    }
+    #radio2:checked ~ .first{
+        margin-left: -70vw;
+    }
+    #radio3:checked ~ .first{
+        margin-left: -140vw;
+    }
+    #radio4:checked ~ .first{
+        margin-left: -210vw;
+    }
+    #radio5:checked ~ .first{
+        margin-left: -280vw;
+    }
+    #radio6:checked ~ .first{
+        margin-left: -350vw;
+    }
+    .navigation-auto{
+        width: 70vw;
+        justify-content: center;
+        padding-top: 65vw;
+    }
 }
 
 #instagram-link{
