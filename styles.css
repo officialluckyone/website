@@ -295,8 +295,8 @@ div.tag img{
     align-items: center;
 }
 .skillcard{
-    width: 235px;
-    height: 235px;
+    width: 250px;
+    height: 250px;
     padding: 20px;
     margin: 20px;
     text-align: center;
@@ -308,6 +308,9 @@ div.tag img{
     background-color: #222831;
     border: 5px solid rgba(255, 211, 105,0);
     transition: all 0.5s;
+}
+.skillcard p{
+    text-align: justify;
 }
 .skillcard img{
     width: 30%;
@@ -353,7 +356,7 @@ div.tag img{
     width: 50vw;
     display: flex;
     justify-content: center;
-    padding-top: 50vw;
+    padding-top: 47vw;
 }
 
 .manual-btn{
@@ -388,6 +391,43 @@ div.tag img{
 }
 #radio6:checked ~ .first{
     margin-left: -250vw;
+}
+
+/* automatic navigation */
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 50vw;
+    justify-content: center;
+    padding-top: 47vw;
+}
+.navigation-auto div{
+    border: 2px solid rgba(34, 40, 49,1);
+    padding: 5px;
+    border-radius: 10px;
+    transition: all 1s;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 20px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: rgba(34, 40, 49,1);
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: rgba(34, 40, 49,1);
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: rgba(34, 40, 49,1);
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: rgba(34, 40, 49,1);
+}
+#radio5:checked ~ .navigation-auto .auto-btn5{
+    background-color: rgba(34, 40, 49,1);
+}
+#radio6:checked ~ .navigation-auto .auto-btn6{
+    background-color: rgba(34, 40, 49,1);
 }
 
 
