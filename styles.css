@@ -186,7 +186,7 @@ ul li a{
 
 /* JOB - Current Work */
 .job{
-    min-height: 90vh;
+    min-height: 70vh;
     padding: 5vh 0;
     width: 100vw;
     
@@ -203,9 +203,9 @@ div.card-container{
 }
 div.jobcard{
     position: relative;
-    min-width: 450px;
-    min-height: 300px;
-    margin: 20px;
+    width: 450px;
+    height: 300px;
+    margin: 50px 0;
     /* background-color: yellow; */
     border-radius: 20px;
     border: 5px solid #ffd369;
@@ -220,6 +220,12 @@ div.jobcard{
     background-image: url("Resources/Images/Leader.jpg");
     background-size:cover;
     background-position: center;
+}
+div.jobcard h3{
+    text-align: center;
+    color: #ffd369;
+    margin-top: 20px;
+    font-size: 20px;
 }
 div.jobcard:hover >div.tag{
     opacity: 1;
@@ -240,9 +246,63 @@ div.tag{
     align-items: center;
     color: #222831;
 }
-div.tag img{
-    width: 150px;
+div.tag h3{
+    font-size: 25px;
+    color: #222831;
 }
+div.tag p{
+    font-size: 16px;
+    font-weight: 600;
+}
+div.tag a{
+    height: 40%;
+}
+div.tag img{
+    height: 100%;
+}
+
+/* Skills & Expertise */
+
+.skill{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+.skillcontainer{
+    width: 80vw;
+    margin: 5vw 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.skillcard{
+    width: 235px;
+    height: 235px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px 0;
+    background-color: #222831;
+    border: 5px solid rgba(255, 211, 105,0);
+}
+.skillcard img{
+    width: 30%;
+    height: 30%;
+}
+.skillcard:hover{
+    border: 5px solid rgba(255, 211, 105,1);
+    box-shadow: 0px 0px 30px rgba(238, 238, 238,0.3);
+}
+
 
 
 /* Responsive Breakpoint for Navbar */
@@ -292,6 +352,19 @@ div.tag img{
         width: 120px;
         height: 40px;
         font-size: 14px;
+    }
+    div.jobcard{
+        width: 360px;
+        height: 240px;
+        margin: 50px 0;
+    }
+    div.tag{
+        height: 220px;
+    }
+    
+    div.tag h3{
+        font-size: 20px;
+        color: #222831;
     }
 
 }
