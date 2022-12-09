@@ -163,34 +163,48 @@ ul li a{
     align-items: center;
     width: 100vw;
 }
-.contact-me{
+.button{
     margin-top: 30px;
     font-family: 'Quicksand';
+    border-radius: 10px;
+    border: 3px solid rgba(255, 211, 105,0);
+    background-color: #ffd369;
+    font-weight: 600;
+    font-size: 20px;
+    color:#222831;
+    transition: all 0.5s;
+}
+.button:hover{
+    transform: translateY(-10%);
+    border: 3px solid rgba(255, 211, 105,1);
+    background-color: #222831;
+    box-shadow: 0px 0px 20px rgba(238, 238, 238,0.4);
+    color: #EEEEEE;
+    cursor: pointer;
+}
+
+.contact-me{
     width: 160px;
     height: 50px;
-    border-radius: 10px;
-    border: none;
-    background-color: #ffd369;
-    font-weight: 800;
-    font-size: 20px;
-    color:#222831
+}
+
+.more-experience{
+    width: 200px;
+    height: 50px;
 }
 
 .container{
     width: 100vw;
-    min-height: 100vh;
+    min-height: 90vh;
+    padding: 5vh 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 /* JOB - Current Work */
-.job{
-    min-height: 70vh;
-    padding: 5vh 0;
-    width: 100vw;
-    
-}
+
 .job p{
     text-align: center;
 }
@@ -293,6 +307,7 @@ div.tag img{
     border-radius: 20px 0;
     background-color: #222831;
     border: 5px solid rgba(255, 211, 105,0);
+    transition: all 0.5s;
 }
 .skillcard img{
     width: 30%;
