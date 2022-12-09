@@ -494,3 +494,43 @@ div.tag img{
     }
 
 }
+
+#instagram-link{
+    background-image: url(Resources/Images/footer-icon/ig-white.png);
+    background-size: contain;
+}
+#linkedin-link{
+    background-image: url(Resources/Images/footer-icon/linkedin-white.png);
+    background-size: contain;
+}
+#instagram-link:hover{
+    background-image: url(Resources/Images/footer-icon/ig-yellow.png);
+}
+#linkedin-link:hover{
+    background-image: url(Resources/Images/footer-icon/linkedin-yellow.png);
+}
+footer{
+    width: 40vw;
+    margin: auto;
+    height: 20vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer div{
+    display: inline-block;
+    vertical-align: middle;
+}
+footer ul li a div{
+    width: 20px;
+    height: 20px;
+    margin: 0px 5px;
+}
+footer ul{
+    display: inline-block;
+    width: auto;
+    right: 0px;
+}
+footer ul li{
+    display: inline-block;
+}
