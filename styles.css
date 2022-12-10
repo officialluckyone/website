@@ -455,6 +455,11 @@ div.tag img{
     padding: 20px;
     flex-wrap: wrap;
     margin: 0 10px;
+    transform: scale(100%);
+    transition: all 0.2s;
+}
+.recommendation:hover{
+    transform: scale(105%);
 }
 .recom-profile{
     display: flex;
@@ -462,8 +467,10 @@ div.tag img{
     align-items: center;
 }
 .recom-name{
-    height: 20%;
-    margin: 0;
+    height: 35%;
+    padding: 10px;
+    background-color: #ffd369;
+
 }
 
 .recom-profile img{
@@ -473,7 +480,7 @@ div.tag img{
     margin: 10px 0px;
     border: 2px solid rgba(34, 40, 49,1);
     border-radius: 75px;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 div.recommendation p{
     margin-top: 10px;
@@ -552,7 +559,7 @@ div.recommendation p{
         margin: 10px 0;
         border: 2px solid rgba(34, 40, 49,1);
         border-radius: 55px;
-        margin-right: 20px;
+        margin-right: 10px;
     }
     
     div.recommendation p{
@@ -678,7 +685,7 @@ div.recommendation p{
         margin: 10px 0;
         border: 2px solid rgba(34, 40, 49,1);
         border-radius: 45px;
-        margin-right: 15px;
+        margin-right: 10px;
     }
 }
 
