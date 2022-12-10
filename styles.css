@@ -438,21 +438,35 @@ div.tag img{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 5vw;
+    flex-wrap: wrap;
 }
 .recommendation{
     width: 40vw;
     height: 400px;
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: rgba(238, 238, 238,1);
     border-radius: 20px;
-    box-shadow: 0px 0px 20px rgba(238, 238, 238,0.3);
+    box-shadow: 1px 1px 20px rgba(238, 238, 238,0.4);
     padding: 20px;
+    flex-wrap: wrap;
+}
+.recom-profile{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.recom-name{
+    height: 20%;
+    margin: 0;
 }
 
-.recom-profile{
+.recom-profile img{
     width: 140px;
     height: 140px;
     padding: 4px;
@@ -460,18 +474,33 @@ div.tag img{
     border: 2px solid rgba(34, 40, 49,1);
     border-radius: 75px;
 }
-div.recom-profile img{
-    width:140px;
-    height: 140px;
-    border-radius: 75px;
-    overflow: hidden;
-}
 div.recommendation p{
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 16px;
     font-weight: 600;
     text-align: justify;
-    height: 50%;
+    height: 40%;
+}
+
+.profilename{
+    color: rgba(34, 40, 49,1);
+    font-size: 25px;
+}
+.jobtitle{
+    font-size: 18px;
+}
+/* Quote */
+.quote1{
+    position: absolute;
+    width: 9vw;
+    left: 20px;
+    top: -35px;
+}
+.quote2{
+    position: absolute;
+    width: 8vw;
+    right: 20px;
+    bottom: -25px;
 }
 
 /* Responsive Breakpoint for Navbar */
@@ -587,8 +616,53 @@ div.recommendation p{
         justify-content: center;
         padding-top: 65vw;
     }
+    /* Recommendation Mobile */
+    .recommendation{
+        width: 70vw;
+        margin: 30px auto;
+    }
+    
+    .subtitle{
+        font-size: 25px;
+    }
+    .jobtitle{
+        font-size: 15px;
+    }
+    
+    .recom-profile{
+        width: 90%;
+    }
+    .recom-profile img{
+        width: 100px;
+        height: 100px;
+        padding: 4px;
+        margin: 10px auto;
+        border: 2px solid rgba(34, 40, 49,1);
+        border-radius: 55px;
+    }
+    
+    div.recommendation p{
+        font-size: 14px;
+        height: 60%;
+    }
+    
+    .quote1{
+        width: 15vw;
+        left: 20px;
+        top: -35px;
+    }
+    .quote2{
+        position: absolute;
+        width: 12vw;
+        right: 20px;
+        bottom: -25px;
+    }
 }
 
+
+
+
+/* Footer */
 #instagram-link{
     background-image: url(Resources/Images/footer-icon/ig-white.png);
     background-size: contain;
