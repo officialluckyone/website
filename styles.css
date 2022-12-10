@@ -525,6 +525,48 @@ div.recommendation p{
         line-height: 1.5em;
         text-align: center;
     }
+    
+    /* Recommendation Mobile & Tablet */
+    .recommendation{
+        width: 70vw;
+        margin: 30px auto;
+    }
+    
+    .subtitle{
+        font-size: 25px;
+    }
+    .jobtitle{
+        font-size: 15px;
+    }
+    
+    .recom-profile{
+        width: 90%;
+    }
+    .recom-profile img{
+        width: 100px;
+        height: 100px;
+        padding: 4px;
+        margin: 10px auto;
+        border: 2px solid rgba(34, 40, 49,1);
+        border-radius: 55px;
+    }
+    
+    div.recommendation p{
+        font-size: 14px;
+        height: 60%;
+    }
+    
+    .quote1{
+        width: 15vw;
+        left: 20px;
+        top: -35px;
+    }
+    .quote2{
+        position: absolute;
+        width: 12vw;
+        right: 20px;
+        bottom: -25px;
+    }
 }
 /* Mobile Screen Size */
 @media screen and (max-width:576px) {
@@ -615,47 +657,6 @@ div.recommendation p{
         width: 70vw;
         justify-content: center;
         padding-top: 65vw;
-    }
-    /* Recommendation Mobile */
-    .recommendation{
-        width: 70vw;
-        margin: 30px auto;
-    }
-    
-    .subtitle{
-        font-size: 25px;
-    }
-    .jobtitle{
-        font-size: 15px;
-    }
-    
-    .recom-profile{
-        width: 90%;
-    }
-    .recom-profile img{
-        width: 100px;
-        height: 100px;
-        padding: 4px;
-        margin: 10px auto;
-        border: 2px solid rgba(34, 40, 49,1);
-        border-radius: 55px;
-    }
-    
-    div.recommendation p{
-        font-size: 14px;
-        height: 60%;
-    }
-    
-    .quote1{
-        width: 15vw;
-        left: 20px;
-        top: -35px;
-    }
-    .quote2{
-        position: absolute;
-        width: 12vw;
-        right: 20px;
-        bottom: -25px;
     }
 }
 
