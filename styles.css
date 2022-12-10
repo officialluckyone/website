@@ -442,8 +442,8 @@ div.tag img{
     flex-wrap: wrap;
 }
 .recommendation{
-    width: 40vw;
-    height: 400px;
+    width: 38vw;
+    height: 450px;
     display: flex;
     position: relative;
     flex-direction: column;
@@ -454,11 +454,11 @@ div.tag img{
     box-shadow: 1px 1px 20px rgba(238, 238, 238,0.4);
     padding: 20px;
     flex-wrap: wrap;
+    margin: 0 10px;
 }
 .recom-profile{
-    width: 80%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 .recom-name{
@@ -470,16 +470,17 @@ div.tag img{
     width: 140px;
     height: 140px;
     padding: 4px;
-    margin: 10px auto;
+    margin: 10px 0px;
     border: 2px solid rgba(34, 40, 49,1);
     border-radius: 75px;
+    margin-right: 20px;
 }
 div.recommendation p{
     margin-top: 10px;
     font-size: 16px;
     font-weight: 600;
     text-align: justify;
-    height: 40%;
+    height: 45%;
 }
 
 .profilename{
@@ -500,7 +501,7 @@ div.recommendation p{
     position: absolute;
     width: 8vw;
     right: 20px;
-    bottom: -25px;
+    bottom: -30px;
 }
 
 /* Responsive Breakpoint for Navbar */
@@ -528,15 +529,16 @@ div.recommendation p{
     
     /* Recommendation Mobile & Tablet */
     .recommendation{
-        width: 70vw;
+        width: 50vw;
+        height: 400px;
         margin: 30px auto;
     }
     
     .subtitle{
-        font-size: 25px;
+        font-size: 20px;
     }
     .jobtitle{
-        font-size: 15px;
+        font-size: 14px;
     }
     
     .recom-profile{
@@ -545,10 +547,10 @@ div.recommendation p{
     .recom-profile img{
         width: 100px;
         height: 100px;
-        padding: 4px;
-        margin: 10px auto;
+        margin: 10px 0;
         border: 2px solid rgba(34, 40, 49,1);
         border-radius: 55px;
+        margin-right: 20px;
     }
     
     div.recommendation p{
@@ -657,6 +659,12 @@ div.recommendation p{
         width: 70vw;
         justify-content: center;
         padding-top: 65vw;
+    }
+    
+    .recommendation{
+        width: 75vw;
+        height: 400px;
+        margin: 30px auto;
     }
 }
 
