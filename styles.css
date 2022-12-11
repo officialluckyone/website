@@ -83,14 +83,14 @@ nav ul.slide{
 #logo-utama:hover {
     box-shadow: 0 1px 20px rgba(238, 238, 238,0.5);
 }
-ul li a{
+nav ul li a{
     text-decoration: none;
     color: #eeeeee;
     font-size: 14pt;
     font-weight: 600;
 }
 
-ul li a:hover{
+nav ul li a:hover{
     color: rgba(255, 211, 105,1);
     text-shadow: 0px 1px 20px rgba(238, 238, 238,0.5);
 }
@@ -772,7 +772,70 @@ div.recommendation p{
     }
 }
 
+/* Let's Connect */
 
+ul.connect{
+    position: relative;
+    list-style: none;
+    display: flex;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    /* background-color: white; */
+    border-radius: 20px;
+    margin-top: 20px;
+}
+ul.connect li a{
+    text-decoration: none;
+    color: #393E46;
+
+}
+ul.connect li{
+    position: relative;
+    font-family: fontAwesome;
+    font-size: 3em;
+    list-style: none;
+    margin: 20px;
+    cursor: pointer;
+}
+ul.connect li::before{
+    position: absolute;
+    font-family: fontAwesome;
+    top: 0;
+    left: 0;
+    height: 0%;
+    font-size: 3em;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+ul.connect li:nth-child(1):before {
+    content: '\f0e1';
+    color: #0E76A8;
+    border-bottom: 4px solid #0E76A8;
+    pointer-events: none;
+}
+ul.connect li:nth-child(2):before {
+    content: '\f16d';
+    color: #E1306C;
+    border-bottom: 4px solid #E1306C;
+    pointer-events: none;
+}
+
+ul.connect li:nth-child(3):before {
+    content: '\f232';
+    color: #25D366;
+    border-bottom: 4px solid #25D366;
+    pointer-events: none;
+}
+ul.connect li:nth-child(4):before {
+    content: '\f099';
+    color: #1DA1F2;
+    border-bottom: 4px solid #1DA1F2;
+    pointer-events: none;
+} 
+ul.connect li:hover::before{
+    height: 100%;
+}
 
 
 /* Footer */
