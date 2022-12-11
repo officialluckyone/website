@@ -749,6 +749,9 @@ div.recommendation p{
         justify-content: center;
         padding-top: 75vw;
     }
+    .title{
+        font-size: 30px;
+    }
     .subtitle{
         font-size: 18px;
         line-height: 1;
