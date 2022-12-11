@@ -778,8 +778,8 @@ ul.connect{
     position: relative;
     list-style: none;
     display: flex;
+    width: 80vw;
     flex-wrap: wrap;
-    height: 150px;
     justify-content: center;
     align-items: center;
     /* background-color: white; */
