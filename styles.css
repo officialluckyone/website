@@ -628,46 +628,46 @@ div.recommendation p{
         color: #222831;
     }
     .slider{
-        width: 70vw;
-        height: 70vw;
+        width: 80vw;
+        height: 80vw;
     }
     
     .slides{
-        width: 420vw;
-        height: 70vw;
+        width: 80vw;
+        height: 80vw;
         display: flex;
     }
     
     .slide img{
-        width: 70vw;
-        height: 70vw;
+        width: 80vw;
+        height: 80vw;
     }
     .slide{
-        width: 70vw;
+        width: 80vw;
     }
     .navigation-manual{
-        width: 70vw;
-        padding-top: 65vw;
+        width: 80vw;
+        padding-top: 75vw;
     }
     #radio2:checked ~ .first{
-        margin-left: -70vw;
+        margin-left: -80vw;
     }
     #radio3:checked ~ .first{
-        margin-left: -140vw;
+        margin-left: -160vw;
     }
     #radio4:checked ~ .first{
-        margin-left: -210vw;
+        margin-left: -240vw;
     }
     #radio5:checked ~ .first{
-        margin-left: -280vw;
+        margin-left: -320vw;
     }
     #radio6:checked ~ .first{
-        margin-left: -350vw;
+        margin-left: -400vw;
     }
     .navigation-auto{
-        width: 70vw;
+        width: 80vw;
         justify-content: center;
-        padding-top: 65vw;
+        padding-top: 75vw;
     }
     .subtitle{
         font-size: 18px;
