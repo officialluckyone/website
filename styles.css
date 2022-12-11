@@ -778,12 +778,13 @@ ul.connect{
     position: relative;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     height: 150px;
     justify-content: center;
     align-items: center;
     /* background-color: white; */
     border-radius: 20px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 ul.connect li a{
     text-decoration: none;
