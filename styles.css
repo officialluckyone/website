@@ -196,7 +196,7 @@ nav ul li a:hover{
     height: 50px;
 }
 
-.more-experience{
+#more-experience{
     width: 200px;
     height: 50px;
 }
@@ -283,6 +283,9 @@ div.tag img{
     height: 100%;
 }
 
+.hide{
+    background-color: red;
+}
 /* Skills & Expertise */
 
 .skill{
@@ -445,11 +448,11 @@ div.tag img{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 5vw;
+    padding: 2vw;
     flex-wrap: wrap;
 }
 .recommendation{
-    width: 38vw;
+    width: 33vw;
     height: 450px;
     display: flex;
     position: relative;
@@ -459,14 +462,14 @@ div.tag img{
     background-color: rgba(238, 238, 238,1);
     border-radius: 20px;
     box-shadow: 1px 1px 20px rgba(238, 238, 238,0.4);
-    padding: 20px;
+    padding: 20px 40px;
     flex-wrap: wrap;
-    margin: 0 10px;
+    margin: 30px 10px;
     transform: scale(100%);
     transition: all 0.2s;
 }
 .recommendation:hover{
-    transform: scale(105%);
+    transform: scale(103%);
 }
 .recom-profile{
     display: flex;
@@ -502,20 +505,20 @@ div.recommendation p{
     font-size: 25px;
 }
 .jobtitle{
-    font-size: 18px;
+    font-size: 14px;
 }
 /* Quote */
 .quote1{
     position: absolute;
-    width: 9vw;
+    width: 8.5vw;
     left: 20px;
-    top: -35px;
+    top: -32px;
 }
 .quote2{
     position: absolute;
-    width: 8vw;
+    width: 7vw;
     right: 20px;
-    bottom: -30px;
+    bottom: -27px;
 }
 
 /* Recommendation Animation */
@@ -622,7 +625,7 @@ div.recommendation p{
         line-height: 1;
     }
     .jobtitle{
-        font-size: 14px;
+        font-size: 12px;
         line-height: 1;
     }
     
@@ -878,4 +881,16 @@ footer ul{
 }
 footer ul li{
     display: inline-block;
+}
+
+/* Efek Reveal */
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
 }
