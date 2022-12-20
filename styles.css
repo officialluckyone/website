@@ -46,6 +46,7 @@ Light Grey : #EEEEEE
     padding: 0;
     text-decoration: none;
     user-select: none;
+    box-sizing: border-box;
 }
 body{
     width:100vw;
@@ -217,6 +218,7 @@ div.card-container{
     justify-content: space-evenly;
     align-items: center;
     width: 100vw;
+    min-height: 100vh;
 }
 
 /* Flipping Card */
@@ -311,8 +313,8 @@ div.card-container{
     align-items: center;
 }
 .skillcard{
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     padding: 20px;
     margin: 20px;
     text-align: center;
@@ -449,16 +451,16 @@ div.card-container{
 
 /* Redommendations */
 .recommendationcards{
-    width: 90vw;
+    width: 95vw;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     padding: 2vw;
     flex-wrap: wrap;
 }
 .recommendation{
-    width: 33vw;
-    height: 450px;
+    width: 40vw;
+    min-height: 500px;
     display: flex;
     position: relative;
     flex-direction: column;
@@ -469,7 +471,7 @@ div.card-container{
     box-shadow: 1px 1px 20px rgba(238, 238, 238,0.4);
     padding: 20px 40px;
     flex-wrap: wrap;
-    margin: 30px 10px;
+    margin: 35px 10px;
     transform: scale(100%);
     transition: all 0.2s;
 }
@@ -480,16 +482,19 @@ div.card-container{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 90%;
 }
 .recom-name{
     padding: 10px;
     background-color: #ffd369;
     position: relative;
 }
-
+.recom-title{
+    font-size: 24px;
+}
 .recom-profile img{
-    width: 140px;
-    height: 140px;
+    width: 150px;
+    height: 150px;
     padding: 4px;
     margin: 10px 0px;
     border: 2px solid rgba(34, 40, 49,1);
@@ -501,7 +506,6 @@ div.recommendation p{
     font-size: 16px;
     font-weight: 600;
     text-align: justify;
-    height: 45%;
 }
 
 .profilename{
@@ -619,14 +623,18 @@ div.recommendation p{
     
     /* Recommendation Mobile & Tablet */
     .recommendation{
-        width: 50vw;
-        height: 400px;
-        margin: 30px auto;
+        width: 70vw;
+        min-height: 200px !important;
+        margin: 35px auto;
+        padding: 50px 30px;
     }
     
     .subtitle{
         font-size: 20px;
         line-height: 1;
+    }
+    .recom-title{
+        font-size: 18px;
     }
     .jobtitle{
         font-size: 12px;
@@ -647,7 +655,6 @@ div.recommendation p{
     
     div.recommendation p{
         font-size: 14px;
-        height: 60%;
     }
     
     .quote1{
@@ -762,9 +769,8 @@ div.recommendation p{
     .title{
         font-size: 30px;
     }
-    .subtitle{
+        .recom-title{
         font-size: 16px;
-        line-height: 1;
     }
     .jobtitle{
         font-size: 12px;
