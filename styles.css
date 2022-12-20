@@ -291,69 +291,6 @@ div.card-container{
     color: rgba(238, 238, 238,1);
 }
 
-
-/* JOB - Current Work - Versi Lama */ 
-/* 
-.job p{
-    text-align: center;
-}
-div.card-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    width: 100vw;
-}
-div.jobcard{
-    position: relative;
-    width: 450px;
-    height: 300px;
-    margin: 50px 0;
-    border-radius: 20px;
-    border: 5px solid #ffd369;
-    box-shadow: 0px 0px 20px rgba(238, 238, 238,0.3);
-}
-
-div.jobcard h3{
-    text-align: center;
-    color: #ffd369;
-    margin-top: 20px;
-    font-size: 20px;
-}
-div.tag{
-    position:relative;
-    cursor: pointer;
-    height: 280px;
-    text-align: center;
-    background-color: rgba(238, 238, 238,1);
-    padding: 10px 0;
-    border-radius: 14px;
-    opacity:1;
-    transition: all 1s;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    color: #222831;
-}
-div.tag h3{
-    font-size: 25px;
-    color: #222831;
-}
-div.tag p{
-    font-size: 16px;
-    font-weight: 600;
-}
-div.tag a{
-    height: 40%;
-}
-div.tag img{
-    height: 100%;
-}
-
-.hide{
-    background-color: red;
-} */
 /* Skills & Expertise */
 
 .skill{
