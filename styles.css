@@ -477,7 +477,7 @@ div.tag img{
     align-items: center;
 }
 .recom-name{
-    height: 35%;
+    min-height: 35%;
     padding: 10px;
     background-color: #ffd369;
     position: relative;
