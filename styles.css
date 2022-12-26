@@ -41,11 +41,10 @@ Light Grey : #EEEEEE
     font-size: 28px;
 }
 
-* {
+*,*::before,*::after {
     margin: 0;
     padding: 0;
     text-decoration: none;
-    user-select: none;
     box-sizing: border-box;
 }
 body{
@@ -54,6 +53,12 @@ body{
     font-family: 'Quicksand', sans-serif;
     overflow-x:hidden;
     color:#eeeeee;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+
+}
+body::-webkit-scrollbar{ 
+    display: none;
 }
 /* Navbar */
 nav{
@@ -201,7 +206,7 @@ nav ul li a:hover{
 
 .container{
     width: 100vw;
-    min-height: 90vh;
+    min-height: 100vh;
     padding: 5vh 0;
     display: flex;
     justify-content: center;
@@ -218,7 +223,6 @@ div.card-container{
     justify-content: space-evenly;
     align-items: center;
     width: 100vw;
-    min-height: 100vh;
 }
 
 /* Flipping Card */
@@ -291,6 +295,95 @@ div.card-container{
     backface-visibility: hidden;
     background-color: rgba(34, 40, 49,1);
     color: rgba(238, 238, 238,1);
+}
+
+/* Style buat Kartu Pengalaman */
+#pastexperience{
+    position: relative;
+    width: 95vw;
+    height: 650px;
+    left: 5vw;  
+    /* border-top: 10px solid red; */
+    overflow: hidden;
+    cursor: grab;
+}
+/* Container utama */
+.experiencecards{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: grid;
+    grid-template-columns: repeat(8,400px);
+    grid-gap: 50px;
+    /* border-bottom: 10px solid blue; */
+    pointer-events: none;
+}
+
+/* Kartu */
+.exp-card{
+    background-color: rgba(238, 238, 238,1);
+    border: 2px solid rgba(238, 238, 238,1);
+    overflow: hidden;
+    border-radius: 30px;
+
+}
+/* Bagian Atas Kartu */
+.exp-card-head{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(34, 40, 49,0.3);
+    border-radius: 30px 30px 0 30px;
+    display: flex;
+    justify-content: center;
+}
+.exp-card-head::before,::after{
+    content: '';
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: -60px;
+    right: 0;
+}
+.exp-card-head::before{
+    background-color: rgba(34, 40, 49,0.3);
+}
+.exp-card-head::after{
+    border-radius: 0 30px 0 0;
+    background-color: rgba(238, 238, 238,1);
+
+}
+
+.exp-card-head img{
+    width: 80%;
+    height: 150px;
+    object-fit: contain;
+}
+
+/* Isi Kartu */
+.exp-card-content{
+    color: rgba(34, 40, 49,1);
+    padding: 25px;
+}
+.exp-card-content h3,h4{
+    text-align: center;
+}
+.exp-card-content h4{
+    margin-bottom: 20px;
+}
+.exp-card-content ul{
+    margin-left: 20px;
+}
+.exp-card-content ul li{
+    font-weight: 500;
+}
+
+/* Customizing Work Experience Header */
+.black-expcard{
+    background-color: rgba(34, 40, 49,.8);
+}
+.black-expcard::before{
+    background-color: rgba(34, 40, 49,.8);
 }
 
 /* Skills & Expertise */

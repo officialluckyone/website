@@ -32,3 +32,38 @@ function reveal(){
     }
 
 }
+
+const expcontainer = document.querySelector('#pastexperience');
+const expcards = document.querySelector('.experiencecards');
+// Keep Track for Mouse Down
+let isPressedDown = false;
+
+// Cursor X Space
+let cursorXSpace;
+
+expcontainer.addEventListener("mousedown",(e)=>{
+    isPressedDown = true;
+    cursorXSpace = e.offsetX - expcards.offsetLeft;
+});
+
+window.addEventListener("mouseup",(e)=>{
+    isPressedDown = false;
+});
+
+expcontainer.addEventListener("mousemove",(e)=>{
+    if (!isPressedDown) return;
+    e.preventDefault();
+    expcards.style.left = `${e.offsetX - cursorXSpace}px`;
+    boundCards();
+});
+
+function boundCards(){
+    const container_rect = expcontainer.getBoundingClientRect();
+    const cards_rect = expcards.getBoundingClientRect();
+
+    if (parseInt(expcards.style.left) > 0){
+        expcards.style.left = 0;
+    } else if (cards_rect.right < container_rect.right){
+        expcards.style.left = `-${cards_rect.width - container_rect.width}px`;
+    }
+};
