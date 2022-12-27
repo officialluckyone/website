@@ -302,7 +302,7 @@ div.card-container{
     position: relative;
     width: 95vw;
     height: 650px;
-    left: 5vw;  
+    left: 5vw;
     /* border-top: 10px solid red; */
     overflow: hidden;
     cursor: grab;
@@ -313,7 +313,7 @@ div.card-container{
     left: 0;
     top: 0;
     display: grid;
-    grid-template-columns: repeat(8,400px);
+    grid-template-columns: repeat(8,350px);
     grid-gap: 50px;
     /* border-bottom: 10px solid blue; */
     pointer-events: none;
