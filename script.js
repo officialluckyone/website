@@ -106,5 +106,4 @@ function dragMove(e){
 function dragEnd(e){
     finalPosition = expcards.offsetLeft;
 
-    }
 };
