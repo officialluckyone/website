@@ -35,6 +35,7 @@ function reveal(){
 
 const expcontainer = document.querySelector('#pastexperience');
 const expcards = document.querySelector('.experiencecards');
+
 // Keep Track for Mouse Down
 let isPressedDown = false;
 

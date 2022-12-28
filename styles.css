@@ -206,12 +206,14 @@ nav ul li a:hover{
 
 .container{
     width: 100vw;
+    box-sizing: border-box;
     min-height: 100vh;
     padding: 5vh 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
 }
 
 
@@ -300,9 +302,10 @@ div.card-container{
 /* Style buat Kartu Pengalaman */
 #pastexperience{
     position: relative;
-    width: 95vw;
-    height: 650px;
+    width: 100vw;
     left: 5vw;
+    height: 650px;
+    padding-left: 5vw;
     /* border-top: 10px solid red; */
     overflow: hidden;
     cursor: grab;
