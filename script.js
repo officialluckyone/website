@@ -69,30 +69,42 @@ function boundCards(){
     }
 };
 
-// Mobile Code
-expcontainer.addEventListener("touchstart",(e)=>{
-    isPressedDown = true;
-    cursorXSpace = e.offsetX - expcards.offsetLeft;
-});
+// Mobile Drag & Drop Code
+// Position Variable
+let posX1;
+let posX2;
+let initialPosition;
+let finalPosition;
 
-window.addEventListener("touchend",(e)=>{
-    isPressedDown = false;
-});
+expcontainer.addEventListener("touchstart",dragStart);
+expcontainer.addEventListener("touchmove",dragMove);
+expcontainer.addEventListener("touchend",dragEnd);
 
-expcontainer.addEventListener("touchmove",(e)=>{
-    if (!isPressedDown) return;
+function dragStart(e){
     e.preventDefault();
-    expcards.style.left = `${e.offsetX - cursorXSpace}px`;
-    boundCards();
-});
+    initialPosition = expcards.offsetLeft;
+    if (e.type == 'touchstart'){
+        posX1 = e.touches[0].clientX;
+    } else {
+        posX1 = e.clientX;
+        document.onmouseup = dragEnd;
+        document.onmousemove = dragMove;
+    };
+};
 
-function boundCards(){
-    const container_rect = expcontainer.getBoundingClientRect();
-    const cards_rect = expcards.getBoundingClientRect();
+function dragMove(e){
+    if (e.type == 'touchmove'){
+        posX2 = posX1 - e.touches[0].clientX;
+        posX1 = e.touches[0].clientX;
+    } else {
+        posX2 = posX1 - e.clientX;
+        posX1 = e.clientX;
+    };
+    slides.style.left = `${expcards.offsetLeft - poxX2}px`;
+};
 
-    if (parseInt(expcards.style.left) > 0){
-        expcards.style.left = 0;
-    } else if (cards_rect.right < container_rect.right){
-        expcards.style.left = `-${cards_rect.width - container_rect.width}px`;
+function dragEnd(e){
+    finalPosition = expcards.offsetLeft;
+
     }
 };
