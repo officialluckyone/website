@@ -76,7 +76,7 @@ nav ul{
     display: flex;
     align-items: center;
     vertical-align: center;
-    width: 60%;
+    width: 80%;
     justify-content: space-between;
     transition: all 0.5s;
 }
@@ -207,12 +207,12 @@ nav ul li a:hover{
 
 .container{
     width: 100vw;
-    box-sizing: border-box;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 5vw 0;
 }
 
 
@@ -391,6 +391,37 @@ div.card-container{
 .black-expcard::before{
     background-color: rgba(34, 40, 49,.8);
 }
+
+
+/* Education */
+
+.education-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+.logo-univ{
+    width: 20vw;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 3px solid rgba(255, 211, 105,1);
+    box-shadow: 1px 1px 20px rgba(238, 238, 238,0.4);
+}
+.edu-card-content{
+    width: 30vw;
+    padding: 40px;
+    text-align: left;
+}
+.edu-title{
+    font-size: 2vw;
+}
+.edu-subtitle{
+    font-size: 1.5vw;
+    text-align: left;
+}
+
+/* JANGAN LUPA MOBILE DISPLAY BRO */
 
 /* Skills & Expertise */
 
