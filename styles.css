@@ -367,6 +367,7 @@ div.card-container{
 }
 .exp-card-content h3,h4{
     text-align: center;
+    z-index: 997;
 }
 .exp-card-content h4{
     margin-bottom: 20px;
@@ -376,7 +377,6 @@ div.card-container{
 }
 .exp-card-content ul li{
     font-weight: 500;
-    z-index: 1000;
 }
 
 /* Customizing Work Experience Header */
