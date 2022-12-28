@@ -46,6 +46,7 @@ Light Grey : #EEEEEE
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
+    user-select: none;
 }
 body{
     width:100vw;
@@ -208,7 +209,6 @@ nav ul li a:hover{
     width: 100vw;
     box-sizing: border-box;
     min-height: 100vh;
-    padding: 5vh 0;
     display: flex;
     justify-content: center;
     align-items: center;
