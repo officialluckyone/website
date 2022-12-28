@@ -376,6 +376,7 @@ div.card-container{
 }
 .exp-card-content ul li{
     font-weight: 500;
+    z-index: 1000;
 }
 
 /* Customizing Work Experience Header */
