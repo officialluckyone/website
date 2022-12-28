@@ -41,7 +41,7 @@ Light Grey : #EEEEEE
     font-size: 28px;
 }
 
-*,*::before,*::after {
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;

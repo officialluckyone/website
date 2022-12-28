@@ -67,3 +67,31 @@ function boundCards(){
         expcards.style.left = `-${cards_rect.width - container_rect.width}px`;
     }
 };
+
+// Mobile Code
+expcontainer.addEventListener("touchstart",(e)=>{
+    isPressedDown = true;
+    cursorXSpace = e.offsetX - expcards.offsetLeft;
+});
+
+window.addEventListener("touchend",(e)=>{
+    isPressedDown = false;
+});
+
+expcontainer.addEventListener("touchmove",(e)=>{
+    if (!isPressedDown) return;
+    e.preventDefault();
+    expcards.style.left = `${e.offsetX - cursorXSpace}px`;
+    boundCards();
+});
+
+function boundCards(){
+    const container_rect = expcontainer.getBoundingClientRect();
+    const cards_rect = expcards.getBoundingClientRect();
+
+    if (parseInt(expcards.style.left) > 0){
+        expcards.style.left = 0;
+    } else if (cards_rect.right < container_rect.right){
+        expcards.style.left = `-${cards_rect.width - container_rect.width}px`;
+    }
+};
