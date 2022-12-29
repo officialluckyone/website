@@ -301,7 +301,7 @@ div.card-container{
 /* Style buat Kartu Pengalaman */
 #pastexperience{
     position: relative;
-    width: 100vw;
+    width: 95vw;
     left: 5vw;
     height: 650px;
     padding-left: 5vw;
@@ -460,6 +460,7 @@ div.card-container{
     border-radius: 20px 0;
     background-color: #222831;
     border: 5px solid rgba(255, 211, 105,0);
+    box-shadow: 0px 10px 20px rgba(34, 40, 49,0.5);
     transition: all 0.5s;
 }
 .skillcard p{
