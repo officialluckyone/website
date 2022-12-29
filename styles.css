@@ -397,28 +397,33 @@ div.card-container{
 
 .education-card{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin: 30px 0;
 }
 .logo-univ{
-    width: 20vw;
+    width: 300px;
+    box-sizing: border-box;
     object-fit: cover;
     border-radius: 20px;
     border: 3px solid rgba(255, 211, 105,1);
     box-shadow: 1px 1px 20px rgba(238, 238, 238,0.4);
 }
 .edu-card-content{
-    width: 30vw;
+    width: 400px;
     padding: 40px;
     text-align: left;
+    line-height: 1.5em;
 }
 .edu-title{
-    font-size: 2vw;
+    font-size: 25px;
+    line-height: 1.5em;
 }
 .edu-subtitle{
-    font-size: 1.5vw;
+    font-size: 20px;
     text-align: left;
+    line-height: 1.5em;
 }
 
 /* JANGAN LUPA MOBILE DISPLAY BRO */
@@ -853,6 +858,10 @@ div.recommendation p{
     }
     .workcard ul li{
         font-size: 12px;
+    }
+
+    .edu-card-content,.edu-subtitle,.edu-title{
+        text-align: center;
     }
     .slider{
         width: 80vw;
