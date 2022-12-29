@@ -301,10 +301,9 @@ div.card-container{
 /* Style buat Kartu Pengalaman */
 #pastexperience{
     position: relative;
-    width: 95vw;
+    width: 90vw;
     left: 5vw;
     height: 650px;
-    padding-left: 5vw;
     /* border-top: 10px solid red; */
     overflow: hidden;
     cursor: grab;
