@@ -48,6 +48,10 @@ Light Grey : #EEEEEE
     box-sizing: border-box;
     user-select: none;
 }
+
+html{
+    scroll-behavior: smooth;
+}
 body{
     width:100vw;
     background-color: #222831;
