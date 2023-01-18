@@ -1,0 +1,117 @@
+body{
+    font-family:roboto;
+    color: seashell;
+    background-color: black;
+    opacity:0.9;
+    width: 1280px;
+    margin:auto;
+    overflow-y:scroll;
+    padding-top:71px;
+}
+.navbar-Tea{
+    position:fixed;
+    width: 1280px;
+    height:50px;
+    border-bottom:1px solid seashell;
+    padding:10px;
+    background-color:black;
+    top:0px;
+    display:flex;
+    align-items: center;
+    z-index:100;
+    vertical-align: middle;
+}
+.gambar{
+  display: inline;
+}
+.navigasi{
+  text-align: right;
+  width:100%;
+  display:inline;
+  vertical-align: middle;
+}
+.logo{
+    height: 50px;
+    display:inline;
+    margin-left:10px;
+}
+.miss{
+    display:inline;
+    font-size:22px;
+    margin:0 20px;
+    text-decoration:underline;
+    color:seashell;
+}
+.our-mission{
+  position:relative;
+  width: 1200px;
+  height: 700px;
+  background-image: url(Resources/Images/img-mission-background.jpg);
+  margin:auto;
+  display:flex;
+  align-items: center;
+  vertical-align: center;
+}
+.label{
+  width:1200px;
+  height:140px;
+  text-align: center;
+  background-color: black;
+  position:relative;
+  margin:auto;
+}
+.products{
+  width: 1200px;
+  display:flex;
+  flex-wrap:wrap;
+  margin:auto;
+  justify-content: center;
+}
+.space{
+  margin-bottom:50px;
+}
+section{
+  margin-bottom:100px;
+}
+.card{
+  width: 320px;
+  text-align: center;
+}
+.card img{
+  width:300px;
+  height:200px;
+  margin:auto;
+}
+h2{
+  font-size:32px;
+  text-align: center;
+}
+h4{
+  font-size:22px;
+  margin-top:10px;
+}
+.location{
+  width: 1200px;
+  height: 500px;
+  margin:auto;
+  padding-top:50px;
+  background-image:url(Resources/Images/img-locations-background.jpg);
+}
+.loc-container{
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+.loc-card{
+  width: 300px;
+  height: 250px;
+  font-size:22px;
+  text-align: center;
+  margin: 0px 20px;
+  line-height: 1.5em;
+  background-color:black;
+}
+.foot{
+  height:200px;
+  text-align: center;
+}

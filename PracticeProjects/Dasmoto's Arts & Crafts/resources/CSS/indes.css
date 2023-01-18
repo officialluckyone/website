@@ -1,0 +1,35 @@
+body{
+    font-family: Helvetica, sans-serif;
+}
+.header{
+    background-image: url(../images/pattern.webp);
+    width:100%
+
+}
+.header h1{
+    font-size: 100px;
+    font-weight: bold;
+    color: khaki;
+    text-align: center;
+}
+.tools h2{
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+}
+.green{
+    background-color: mediumspringgreen;
+    width:100%;
+}
+.red{
+    background-color: lightcoral;
+    width:100%;
+}
+.blue{
+    background-color: skyblue;
+    width:100%;
+}
+.tools p span{
+    color: blue;
+    font-weight: bold;
+}

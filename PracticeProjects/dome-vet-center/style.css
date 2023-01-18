@@ -1,0 +1,405 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+  
+a{
+    text-decoration: none;
+}
+
+/* General Format */
+.main-orange-back{
+    background-color: rgba(223,71,30,1);
+}
+.second-orange-back{
+    background-color: rgba(234,160,65,1);
+}
+.soft-orange-back{
+    background-color: rgba(248,210,171,1);
+}
+.pale-orange-back{
+    background-color: rgba(255,247,244,1);
+}
+.main-orange{
+    color: rgba(223,71,30,1);
+}
+.second-orange{
+    color: rgba(234,160,65,1);
+}
+.soft-orange{
+    color: rgba(248,210,171,1);
+}
+.pale-orange{
+    color: rgba(255,247,244,1);
+}
+
+html{
+    font-family: Poppins;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+/* Header */
+.title{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255,247,244,.8);
+}
+.title img{
+    width: 35%;
+    height: auto;
+}
+/* h1{
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    font-size: 3rem;
+} */
+nav{
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    z-index: 1000;
+    background-color: rgba(223,71,30,0.8) !important;
+}
+nav ul{
+    display: flex;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+nav ul li a{
+    color: rgba(255,247,244,1);
+    font-weight: 600;
+}
+
+/* Global Style */
+.container{
+    width: 100vw;
+    min-height: 100vh;
+}
+
+/* Logo */
+#logo .container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("Resources/dome-vet-center-background.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(255,247,244,1);
+}
+#logo img{
+    width: 40vw;
+    height: auto;
+}
+
+
+/* About Us */
+#about-us .container{
+    padding: 5vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#about-us img{
+    width: 25vw;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+    border: 5px solid rgba(248,210,171,1);
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+}
+#about-us .content{
+    width: 45vw;
+    padding: 2rem;
+    background-color: rgba(255,247,244,1);
+    border-radius: 20px;
+    color: rgba(223,71,30,1);
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+    position: relative;
+    z-index: 2;
+}
+#about-us .content h2{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#about-us .content p{
+    text-align: justify;
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+#about-us .content span{
+    content: '';
+    position: absolute;
+    background-color: rgba(234,160,65,1);
+}
+#about-us .content span:nth-child(4){
+    left: -30px;
+    top: -40px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    z-index: -10;
+}
+#about-us .content span:nth-child(5){
+    right: -30px;
+    bottom: -40px;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    z-index: -10;
+}
+#about-us .content span:nth-child(6){
+    right: 50px;
+    top: 50px;
+    width: 120px;
+    height: 120px;
+    border-radius: 80px;
+    z-index: -100;
+    background-color: rgba(248,210,171,0.5);
+}
+
+
+/* Our Services */
+
+#our-services h2{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#our-services .container{
+    display: flex;
+    padding: 5vw;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.services-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.service-card img{
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+.service-card h3{
+    text-align: center;
+    font-size: 2rem;
+}
+.service-card p{
+    text-align: justify;
+    font-size: 1rem;
+}
+.service-card{
+    width: 300px;
+    height: 450px;
+    margin: 20px;
+    background-color: rgba(223,71,30,1);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+    transform: scale(1);
+    transition: all 0.2s ease-out;
+}
+.service-card:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.service-card h3::after{
+    content: '';
+    display: block;
+    width: 40%;
+    height: 4px;
+    background-color: rgba(248,210,171,1);
+    z-index: 100;
+    margin: 0 auto 10px;
+    border-radius: 5px;
+}
+
+#contact-us .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5vw;
+    text-align: center;
+}
+.map{
+    width: 90vw;
+    height: 50vw;
+}
+#contact-us h2{
+    font-size: 3rem;
+}
+#contact-us h3{
+    font-size: 2rem;
+}
+#contact-us p{
+    font-size: 1rem;
+}
+#contact-us li,a{
+    font-size: 1rem;
+}
+#contact-us a{
+    font-weight: 600;
+}
+#contact-us a:hover{
+    font-weight: 600;
+    background-color: rgba(255,247,244,1);
+    color: rgba(223,71,30,1);
+}
+
+
+
+/* Footer */
+footer{
+    height: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+/* Mobile Display */
+@media only screen and (max-width: 425px){
+    nav{
+        display: none;
+    }
+    #logo img{
+        width: 45vw;
+        height: auto;
+    }
+    #about-us .container{
+        width: 100vw;
+        height: 100vh;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    #about-us img{
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+    }
+    #about-us .content{
+        width: 100vw;
+        height: 100vh;
+        padding: 1rem;
+        background-color: rgba(223,71,30,0.7);
+        border-radius: 0;
+        color: rgba(255,247,244,1);
+        box-shadow: none;
+        position: absolute;
+        left: 0;
+        z-index: 2;
+    }
+    #about-us .content h2{
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    #about-us .content p{
+        font-size: 0.5rem;
+        text-align: justify;
+        line-height: 0.7rem;
+        font-weight: 500;
+    }
+    #about-us .content span{
+        content: '';
+        position: absolute;
+        background-color: rgba(234,160,65,0.5);
+    }
+    #about-us .content span:nth-child(4){
+        left: -30px;
+        top: -40px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        z-index: -10;
+    }
+    #about-us .content span:nth-child(5){
+        right: -30px;
+        bottom: -40px;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        z-index: -10;
+    }
+    #about-us .content span:nth-child(6){
+        right: 30px;
+        top: 10px;
+        width: 70px;
+        height: 70px;
+        border-radius: 80px;
+        z-index: -100;
+        background-color: rgba(248,210,171,0.5);
+    }
+    #our-services h2{
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .service-card h3{
+        text-align: center;
+        font-size: 1rem;
+    }
+    .service-card p{
+        text-align: justify;
+        font-size: 0.5rem;
+    }
+    .service-card{
+        width: 250px;
+        height: 280px;
+        margin: 10px 0;
+        background-color: rgba(223,71,30,1);
+        padding: 10px;
+        border-radius: 15px;
+        box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+        transform: scale(1);
+        transition: all 0.2s ease-out;
+    }
+    #contact-us h2{
+        font-size: 1.2rem;
+    }
+    #contact-us h3{
+        font-size: 1rem;
+    }
+    #contact-us p{
+        font-size: 0.5rem;
+    }
+    #contact-us li,a{
+        font-size: 0.5rem;
+    }
+    footer{
+        font-size: 0.4rem;
+        height: 30px;
+    }
+}
