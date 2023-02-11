@@ -61,7 +61,7 @@ expcontainer.addEventListener("mousemove",(e)=>{
 
 expcontainer.addEventListener("touchdown",(e)=>{
     isPressedDown = true;
-    cursorXSpace = e.offsetX - expcards.offsetLeft;
+    cursorXSpace = e.clientX - expcards.offsetLeft;
 });
 
 window.addEventListener("touchup",(e)=>{
@@ -71,7 +71,7 @@ window.addEventListener("touchup",(e)=>{
 expcontainer.addEventListener("touchmove",(e)=>{
     if (!isPressedDown) return;
     e.preventDefault();
-    expcards.style.left = `${e.offsetX - cursorXSpace}px`;
+    expcards.style.left = `${e.clientX - cursorXSpace}px`;
     boundCards();
 });
 
