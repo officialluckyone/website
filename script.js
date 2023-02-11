@@ -58,6 +58,24 @@ expcontainer.addEventListener("mousemove",(e)=>{
     boundCards();
 });
 
+
+expcontainer.addEventListener("touchdown",(e)=>{
+    isPressedDown = true;
+    cursorXSpace = e.offsetX - expcards.offsetLeft;
+});
+
+window.addEventListener("touchup",(e)=>{
+    isPressedDown = false;
+});
+
+expcontainer.addEventListener("touchmove",(e)=>{
+    if (!isPressedDown) return;
+    e.preventDefault();
+    expcards.style.left = `${e.offsetX - cursorXSpace}px`;
+    boundCards();
+});
+
+
 function boundCards(){
     const container_rect = expcontainer.getBoundingClientRect();
     const cards_rect = expcards.getBoundingClientRect();
