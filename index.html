@@ -12,36 +12,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <a href="index.html"><img id="logo-utama" src="Resources/Images/Logo Light Grey Square.png" alt="Logo Official Lucky One"></a>
-        </div>
-        <ul type="none">
-            <li><a href="index.html#Experiences">Experiences</a></li>
-            <li><a href="index.html#Education">Education</a></li>
-            <li><a href="index.html#Skills">Skills</a></li>
-            <li><a href="index.html#Projects">Projects</a></li>
-            <li><a href="index.html#Recommendations">Recommendations</a></li>
-            <li><a href="index.html#Contact">Contact</a></li>
-        </ul>
-        
-        <div class="toggle-menu">
-            <input type="checkbox">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </nav>
+    <div class="navContainer">
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img id="logo-utama" src="Resources/Images/Logo Light Grey Square.png" alt="Logo Official Lucky One"></a>
+            </div>
+            <ul type="none">
+                <li><a href="index.html#Experiences">Experiences</a></li>
+                <li><a href="index.html#Education">Education</a></li>
+                <li><a href="index.html#Skills">Skills</a></li>
+                <li><a href="index.html#Projects">Projects</a></li>
+                <li><a href="index.html#Recommendations">Recommendations</a></li>
+                <li><a href="index.html#Contact">Contact</a></li>
+            </ul>
+            
+            <div class="toggle-menu">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </div>
 
 
     <div class="container">
         <div class="about-me">
             <h4>Hi! My name is</h4>
             <h2>Lucky One</h2>
-            <p>I'm a Programmer,<br>
-                Designer, Digital Marketer,<br>
-                Educator, Team Builder</p>
-                <a href="index.html#Contact"><button class="button contact-me">Contact Me</button></a>
+            <p>I'm an IT enthusiast, a Summa Cum Laude graduate in Business Management with over 10 years of working and entrepreneurship experience. Currently, an active Computer Science undergraduate student. Dedicated to technology and entrepreneurship.</p>
+                <a href="index.html#Contact"><button class="button">Contact Me</button></a>
         </div>
     </div>
     <!-- Current Job -->
@@ -64,7 +64,7 @@
                     </div>
                     <!-- Card Back -->
                     <div class="workcard card-back">
-                        <h3 class="yellow">Founder & Executive Consultant</h3>
+                        <h3 class="yellow">Designer & Web Developer</h3>
                         <ul>
                             <li>Managed Team and involved in <b>marketing, copywriting, social media management, graphic designs, web design & development, and video editting.</b></li>
                             <li>Conducted online and offline meetings with potential clients to <b>build relationships, gain trust and fulfill their branding & marketing needs.</b></li>
@@ -287,6 +287,60 @@
     <div class="container reveal" id="Projects">
         <p class="title yellow bold">Selected Projects</p>
         <br>
+        <p class="subtitle white bold">Website Projects</p>
+        <br>
+        <div class="portfolioContainer">
+            <!-- Card 1 - Summarized Tech -->
+            <div class="webPortfolioCard">
+                <div class="webPortfolioCard-Top">
+                    <img src="./Resources/Images/portfolio-images/summarized-tech.png" alt="Summarized.tech">
+                </div>
+                <div class="webPortfolioCard-Bottom">
+                    <h3 class="subtitle yellow bold">Summarized.tech</h3>
+                    <br>
+                    <p class="white">This is a React Project etc detail. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
+                    <a href="https://summarized.tech" target="_blank" rel="noopener noreferrer"><button class="button">Visit</button></a>
+                </div>
+            </div>
+            <!-- Card 2 - GPT 4-->
+            <div class="webPortfolioCard">
+                <div class="webPortfolioCard-Top">
+                    <img src="./Resources/Images/portfolio-images/gpt-4.png" alt="GPT-4">
+                </div>
+                <div class="webPortfolioCard-Bottom">
+                    <h3 class="subtitle yellow bold">GPT-4 | OpenAI</h3>
+                    <br>
+                    <p class="white">This is a React Project etc detail. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
+                    <a href="https://gpt-4.officialluckyone.com" target="_blank" rel="noopener noreferrer"><button class="button">Visit</button></a>
+                </div>
+            </div>
+            <!-- Card 3 - Gericht-->
+            <div class="webPortfolioCard">
+                <div class="webPortfolioCard-Top">
+                    <img src="./Resources/Images/portfolio-images/gericht.png" alt="GPT-4">
+                </div>
+                <div class="webPortfolioCard-Bottom">
+                    <h3 class="subtitle yellow bold">Gericht Restaurant</h3>
+                    <br>
+                    <p class="white">This is a React Project etc detail. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
+                    <a href="https://gericht.officialluckyone.com" target="_blank" rel="noopener noreferrer"><button class="button">Visit</button></a>
+                </div>
+            </div>
+            <!-- Card 4 - Hoobank-->
+            <div class="webPortfolioCard">
+                <div class="webPortfolioCard-Top">
+                    <img src="./Resources/Images/portfolio-images/hoobank.png" alt="GPT-4">
+                </div>
+                <div class="webPortfolioCard-Bottom">
+                    <h3 class="subtitle yellow bold">Hoobank</h3>
+                    <br>
+                    <p class="white">This is a React Project etc detail. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
+                    <a href="https://hoobank.officialluckyone.com" target="_blank" rel="noopener noreferrer"><button class="button">Visit</button></a>
+                </div>
+            </div>
+        </div>
+        
+        <br>
         <p class="subtitle white bold">Brand Design</p>
         <br>
         <div class="slider">
@@ -340,7 +394,6 @@
                 </div>
                 <!-- Manual Navigation - End -->
             </div>
-
         </div>
 
     </div>
