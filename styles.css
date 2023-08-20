@@ -95,8 +95,12 @@ nav ul{
 }
 /* Sliding ON */
 nav ul.navSlide{
-    /* transform: translateX(0); */
+    transform: translateY(0);
     opacity:0.9;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
 }
 
 #logo-utama{
@@ -896,17 +900,17 @@ div.recommendation p{
         flex-direction: column;
         background-color: #222831;
         z-index: 98;
-        height: 100vh;
         width: 60vw;
         align-items:center;
         justify-content: flex-start;
         opacity: 0;
         padding-top: 100px;
-        /* transform: translatex(100%);
-        -webkit-transform: translatex(100%);
-        -moz-transform: translatex(100%);
-        -ms-transform: translatex(100%);
-        -o-transform: translatex(100%); */
+        padding-bottom: 30px;
+        transform: translatey(-100%);
+        -webkit-transform: translatey(-100%);
+        -moz-transform: translatey(-100%);
+        -ms-transform: translatey(-100%);
+        -o-transform: translatey(-100%);
 }
     nav ul li{
         margin: 10px 0;
