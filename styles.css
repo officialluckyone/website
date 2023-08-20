@@ -805,6 +805,9 @@ div.recommendation p{
 
 /* Tablet Screen Size */
 @media screen and (max-width:768px) {
+    nav ul li a {
+        font-size: 11pt;
+    }
     nav ul{
         width: 75%;
     }
@@ -875,6 +878,9 @@ div.recommendation p{
 }
 /* Mobile Screen Size */
 @media screen and (max-width:576px) {
+    nav ul li a {
+        font-size: 14pt;
+    }
     nav{
         width: 100vw;
         overflow-x: hidden;
