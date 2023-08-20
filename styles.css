@@ -812,6 +812,7 @@ div.recommendation p{
         font-size: 6vw;
         font-weight: 400;
         line-height: 1em;
+        z-index: 1;
     }
     .about-me h2{
         color: #ffd369;
@@ -874,6 +875,10 @@ div.recommendation p{
 }
 /* Mobile Screen Size */
 @media screen and (max-width:576px) {
+    nav{
+        width: 100vw;
+        overflow-x: hidden;
+    }
     .toggle-menu{
         display: flex;
         margin-left: 40%;
@@ -892,7 +897,11 @@ div.recommendation p{
         opacity: 0;
         padding-top: 100px;
         transform: translatex(100%);
-    }
+        -webkit-transform: translatex(100%);
+        -moz-transform: translatex(100%);
+        -ms-transform: translatex(100%);
+        -o-transform: translatex(100%);
+}
     nav ul li{
         margin: 10px 0;
     }
@@ -947,6 +956,7 @@ div.recommendation p{
         height: 80vw;
     }
     .slide{
+        display: flex;
         width: 80vw;
     }
     .navigation-manual{
