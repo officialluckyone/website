@@ -177,10 +177,13 @@ function dragMove(e){
         posX2 = posX1 - e.clientX;
         posX1 = e.clientX;
     };
-    slides.style.left = `${expcards.offsetLeft - poxX2}px`;
+    expcards.style.left = `${expcards.offsetLeft - posX2}px`;
 };
 
 function dragEnd(e){
     finalPosition = expcards.offsetLeft;
-
+    
+    // Clean up the event handlers
+    document.onmouseup = null;
+    document.onmousemove = null;
 };
