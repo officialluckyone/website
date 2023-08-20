@@ -94,8 +94,8 @@ nav ul{
     transition: all 0.5s;
 }
 /* Sliding ON */
-nav ul.slide{
-    transform: translateX(0);
+nav ul.navSlide{
+    /* transform: translateX(0); */
     opacity:0.9;
 }
 
@@ -896,11 +896,11 @@ div.recommendation p{
         justify-content: flex-start;
         opacity: 0;
         padding-top: 100px;
-        transform: translatex(100%);
+        /* transform: translatex(100%);
         -webkit-transform: translatex(100%);
         -moz-transform: translatex(100%);
         -ms-transform: translatex(100%);
-        -o-transform: translatex(100%);
+        -o-transform: translatex(100%); */
 }
     nav ul li{
         margin: 10px 0;
@@ -956,7 +956,6 @@ div.recommendation p{
         height: 80vw;
     }
     .slide{
-        display: flex;
         width: 80vw;
     }
     .navigation-manual{
