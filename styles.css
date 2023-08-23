@@ -529,6 +529,9 @@ div.card-container{
     .webPortfolioCard{
         width: 100%;
     }
+    .portfolioContainer{
+        width: 90vw;
+    }
 }
 
 .webPortfolioCard p{
